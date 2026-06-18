@@ -1,90 +1,206 @@
-<html><head><meta charset="utf-8"/><link rel="icon" type="image/x-icon" href="./favicon.ico"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>QuarterMinder</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" type="text/css"/>
-    <meta name="description" content="QuarterMinder для iPhone и iPad удобный способ вести учет Вашей коллекции «Монеты 50 Штатов», «Федеральный Округ и Территории» и «Национальные Парки®»"/>
-    <meta name="keywords" content="QuarterMinder,Better,than,a,penny,saved!"/><meta name="og:locale" property="og:locale" content="en_US"/>
-    <meta name="og:type" property="og:type" content="website"/>
-    <meta name="og:site_name" property="og:site_name" content="QuarterMinder"/>
-    <meta name="og:title" property="og:title" content="QuarterMinder"/>
-    <meta name="og:description" property="og:description" content="Лучше, чем сбереженный пенни!"/>
-    <meta name="og:image" property="og:image" content="https://s3-us-west-2.amazonaws.com/skygear-cloud-asset/appsite/ca369dad-31c7-48b4-bc95-c4548b3b0ecc-1.png"/><meta name="og:image:type" property="og:image:type" content="image/png"/>
-    <meta name="og:image:width" property="og:image:width" content="1024"/>
-    <meta name="og:image:height" property="og:image:height" content="1024"/>
-    <link rel="stylesheet" href="static/templates/template4/css/main.min.css"/>
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QuarterMinder - учет коллекции четвертаков США</title>
+    <meta name="description" content="QuarterMinder для iPhone и iPad помогает вести учет коллекции четвертаков США: монетные дворы, заметки, изображения и прогресс коллекции.">
+    <link rel="canonical" href="https://www.quarterminder.com/ru/">
+    <link rel="alternate" hreflang="en" href="https://www.quarterminder.com/">
+    <link rel="alternate" hreflang="ru" href="https://www.quarterminder.com/ru/">
+  <link rel="alternate" hreflang="es" href="https://www.quarterminder.com/es/">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="QuarterMinder">
+    <meta property="og:title" content="QuarterMinder">
+    <meta property="og:description" content="Удобное приложение для iPhone и iPad для учета коллекции четвертаков США.">
+    <meta property="og:image" content="https://www.quarterminder.com/assets/images/iphone-collections.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-    <div>
-        <div class="dark">
-            <div class="blurred-cover" style="background-color:rgb(106,173,220);background-image:none;filter:none;-webkit-filter:none;">
-            </div>
-        </div>
-        <main id="main"><section id="hero">
-            <div class="hero-container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12 text-center">
-                        <img class="appsite-icon" src="https://s3-us-west-2.amazonaws.com/skygear-cloud-asset/appsite/ca369dad-31c7-48b4-bc95-c4548b3b0ecc-1.png"/>
-                    </div>
-                    <div class="col-sm-6 col-xs-12"><div class="app-content"><div>
-                        <div class="app-name">QuarterMinder</div>
-                        <div class="app-tagline">Лучше, чем сбереженный пенни!</div>
-                        <div class="app-links">
-                            <a class="app-link" id="appleLink" href="https://itunes.apple.com/us/app/quarterminder/id1214524075?ls=1&amp;mt=8">
-                                <img class="app-icon" src="static/templates/template4/images/badgeappstore.png"/>
+    <div class="page">
+        <header class="site-header">
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="brand" href="./" aria-label="Главная страница QuarterMinder">
+                    <img class="brand-icon" src="../assets/images/app-icon.jpg" alt="" aria-hidden="true">
+                    <span>QuarterMinder</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Возможности</a>
+                    <a href="#screenshots">Скриншоты</a>
+                    <details class="language-menu">
+                        <summary aria-label="Выбрать язык">
+                            <span aria-hidden="true">🌐</span>
+                            <span>Русский</span>
+                        </summary>
+                        <div class="language-menu-list">
+                            <a href="../index.html" lang="en">English</a>
+                            <a href="../es/index.html" lang="es">Español</a>
+                        </div>
+                    </details>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-inner">
+                    <div class="hero-copy">
+                        <img class="hero-app-icon" src="../assets/images/app-icon.jpg" alt="Иконка приложения QuarterMinder">
+                        <p class="kicker">Для iPhone и iPad</p>
+                        <h1 id="hero-title">QuarterMinder</h1>
+                        <p class="lede">Ведите учет коллекции четвертаков США: монетные дворы, заметки, изображения, сведения о выпуске и прогресс по поддерживаемым сериям.</p>
+                        <div class="actions">
+                            <a href="https://apps.apple.com/us/app/quarterminder/id1214524075" aria-label="Загрузить QuarterMinder в App Store">
+                                <img class="app-store-badge" src="../static/templates/template4/images/badgeappstore.png" alt="Загрузить в App Store">
                             </a>
+                            <span class="note">Учетная запись не нужна. Ваша коллекция остается на устройстве.</span>
                         </div>
                     </div>
-                    </div>
-                    <footer class="footer">
-                        <div class="container">
-                            <div class="row">
-                                <strong style="color:white;padding-right:22px;">QuarterMinder</strong>
-                                <a class="footer-link" style="color:white;" href="mailto:support@quarterminder.com">Контакты</a>
+                    <div class="device-stage" aria-label="Предпросмотр приложения QuarterMinder">
+                        <div class="phone">
+                            <div class="phone-screen">
+                                <img src="../assets/images/ru/iphone-collections.webp" alt="Экран учета коллекции в QuarterMinder">
                             </div>
-                        </div>
-                    </footer>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="content"><div class="container-fluid app-container">
-            <div class="row fill">
-                <div class="col-sm-6 col-xs-12"><div class="phone-container">
-                    <div class="phone-wrapper">
-                        <img src="static/templates/template4/images/phoneframe.png" class="phone-frame"/>
-                        <div id="carousel" class="carousel fade" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img src="https://s3-us-west-2.amazonaws.com/skygear-cloud-asset/appsite/c62505b3-7b64-44cc-8d92-9b596bdd0e90-screenshot.png" alt="c62505b3-7b64-44cc-8d92-9b596bdd0e90-screenshot.png"/>
-                                    </div>
-                                    <div class="item ">
-                                        <img src="https://s3-us-west-2.amazonaws.com/skygear-cloud-asset/appsite/7488047c-3d95-4b84-b979-4ce573760b80-screenshot.png" alt="7488047c-3d95-4b84-b979-4ce573760b80-screenshot.png"/>
-                                    </div>
-                                    <div class="item ">
-                                        <img src="https://s3-us-west-2.amazonaws.com/skygear-cloud-asset/appsite/c1e37734-3cba-457a-8cef-1db2decefd84-screenshot.png" alt="c1e37734-3cba-457a-8cef-1db2decefd84-screenshot.png"/>
-                                    </div>
-                                    <div class="item ">
-                                        <img src="https://s3-us-west-2.amazonaws.com/skygear-cloud-asset/appsite/0a2d9afa-f3ac-4552-acc3-6535c411db1f-screenshot.png" alt="0a2d9afa-f3ac-4552-acc3-6535c411db1f-screenshot.png"/>
-                                    </div>
+                            <div class="phone-screen">
+                                <img src="../assets/images/ru/iphone-american-women.webp" alt="Экран серии четвертаков в QuarterMinder">
+                            </div>
+                            <div class="phone-screen">
+                                <img src="../assets/images/ru/iphone-detail.webp" alt="Экран сведений о четвертаке в QuarterMinder">
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="section" id="features" aria-labelledby="features-title">
+                <div class="section-header">
+                    <h2 id="features-title">Создано для коллекционеров четвертаков.</h2>
+                    <p>QuarterMinder помогает быстро понять, какие монеты уже есть, какие еще нужны и где найти важные сведения о каждой монете.</p>
                 </div>
-                <div class="col-sm-6 col-xs-12">
-                    <div class="content-container"><div class="content-container-wrapper">
-                        <div class="app-description">
-                            <p>QuarterMinder для iPhone и iPad удобный способ вести учет Вашей коллекции «Монеты 50 Штатов», «Федеральный Округ и Территории» и «Национальные Парки®»</p>
-                            <p>Возможности:<br />• Многочисленные коллекции<br />• Учет Монетных дворов.<br />• Возможность добавлять комментарии к индивидуальным монетам<br />• Включает в себя серию «Национальные парки®» самой последней версии по мере ее появления<br />• Возможность экспорта в Сообщения, Почту, Заметки и Соцмидию<br />• Детальное изображение в большом формате<br />• Ссылки на карты и веб сайты Монетных дворов для каждой монеты<br />• Мини приложение о выпуске будущих монет<br />• Динамическая поддержка шрифтов</p>
+                <div class="feature-grid">
+                    <article class="feature">
+                        <div class="feature-icon" aria-hidden="true">P</div>
+                        <h3>Учет монетных дворов</h3>
+                        <p>Отслеживайте монеты Денвера и Филадельфии отдельно, чтобы статус коллекции был точным.</p>
+                    </article>
+                    <article class="feature">
+                        <div class="feature-icon" aria-hidden="true">+</div>
+                        <h3>Несколько коллекций</h3>
+                        <p>Создавайте отдельные коллекции для альбомов, членов семьи, папок или разных целей.</p>
+                    </article>
+                    <article class="feature">
+                        <div class="feature-icon" aria-hidden="true">i</div>
+                        <h3>Сведения о монетах</h3>
+                        <p>Используйте крупные изображения, сведения о выпуске, ссылки на карты и сайт Монетного двора США.</p>
+                    </article>
+                    <article class="feature">
+                        <div class="feature-icon" aria-hidden="true">N</div>
+                        <h3>Заметки к монетам</h3>
+                        <p>Добавляйте заметки о состоянии, источнике, расположении в альбоме или других деталях.</p>
+                    </article>
+                    <article class="feature">
+                        <div class="feature-icon" aria-hidden="true">S</div>
+                        <h3>Экспорт и отправка</h3>
+                        <p>Экспортируйте данные коллекции в Сообщения, Почту, Заметки и установленные социальные приложения.</p>
+                    </article>
+                    <article class="feature">
+                        <div class="feature-icon" aria-hidden="true">A</div>
+                        <h3>Удобное чтение</h3>
+                        <p>Поддержка Dynamic Type помогает читать данные в QuarterMinder с выбранным размером текста.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section collections" aria-labelledby="collections-title">
+                <div class="section-header">
+                    <h2 id="collections-title">Актуальные серии четвертаков.</h2>
+                    <p>QuarterMinder обновляется для современных серий четвертаков США, включая новые программы после серии штатов.</p>
+                </div>
+                <ul class="collection-list" aria-label="Поддерживаемые серии четвертаков">
+                    <li>50 State Quarters</li>
+                    <li>D.C. and U.S. Territories Quarters</li>
+                    <li>America the Beautiful Quarters</li>
+                    <li>American Women Quarters</li>
+                    <li>Semiquincentennial Quarters</li>
+                </ul>
+            </section>
+
+            <section class="section" id="screenshots" aria-labelledby="screenshots-title">
+                <div class="section-header">
+                    <h2 id="screenshots-title">Наглядный список коллекции.</h2>
+                    <p>Следите за прогрессом с первого взгляда и открывайте каждую монету для крупных изображений и подробностей.</p>
+                </div>
+                <div class="feature-showcase">
+                    <article class="showcase-row">
+                        <div class="showcase-copy">
+                            <p class="showcase-label">Коллекции</p>
+                            <h3>Сразу видно, что уже есть и что еще нужно найти.</h3>
+                            <p>Отдельные коллекции помогают вести учет альбомов, папок, семейных коллекций или разных целей без смешивания данных.</p>
                         </div>
-                    </div>
-                    </div>
+                        <figure class="showcase-media showcase-phone">
+                            <img src="../assets/images/ru/iphone-collections.webp" alt="Обзор коллекций в QuarterMinder">
+                        </figure>
+                    </article>
+                    <article class="showcase-row showcase-row-reverse">
+                        <div class="showcase-copy">
+                            <p class="showcase-label">Серии</p>
+                            <h3>Проходите серии четвертаков без лишних догадок.</h3>
+                            <p>Просматривайте поддерживаемые серии четвертаков США, отслеживайте монетные дворы и держите список нужных монет под контролем.</p>
+                        </div>
+                        <figure class="showcase-media showcase-phone">
+                            <img src="../assets/images/ru/iphone-american-women.webp" alt="Экран серии четвертаков в QuarterMinder">
+                        </figure>
+                    </article>
+                    <article class="showcase-row">
+                        <div class="showcase-copy">
+                            <p class="showcase-label">Подробности</p>
+                            <h3>Откройте монету и смотрите главное в одном месте.</h3>
+                            <p>Для каждого четвертака доступны крупные изображения, сведения о выпуске, учет монетных дворов, заметки и справочные ссылки.</p>
+                        </div>
+                        <figure class="showcase-media showcase-phone">
+                            <img src="../assets/images/ru/iphone-detail.webp" alt="Экран сведений о четвертаке в QuarterMinder">
+                        </figure>
+                    </article>
+                    <article class="showcase-row showcase-row-reverse">
+                        <div class="showcase-copy">
+                            <p class="showcase-label">iPad</p>
+                            <h3>На большом экране удобнее изучать детали.</h3>
+                            <p>На iPad хватает места для изображений, сведений о выпуске, заметок и справочных ссылок без перегруженного вида.</p>
+                        </div>
+                        <figure class="showcase-media showcase-tablet">
+                            <img src="../assets/images/ru/ipad-detail.webp" alt="Экран сведений QuarterMinder на iPad">
+                        </figure>
+                    </article>
                 </div>
-            </div>
-        </div>
-        </section>
+            </section>
+
+            <section class="cta-band" aria-labelledby="download-title">
+                <div class="cta-inner">
+                    <div>
+                        <h2 id="download-title">Готовы к следующему рулону четвертаков?</h2>
+                        <p>Загрузите QuarterMinder из App Store и держите коллекцию в порядке.</p>
+                    </div>
+                    <a href="https://apps.apple.com/us/app/quarterminder/id1214524075" aria-label="Загрузить QuarterMinder в App Store">
+                        <img class="app-store-badge" src="../static/templates/template4/images/badgeappstore.png" alt="Загрузить в App Store">
+                    </a>
+                </div>
+            </section>
         </main>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <span>© 2026 Ken Grigsby</span>
+                <div class="footer-links">
+                    <a href="mailto:support@quarterminder.com">Поддержка</a>
+                    <a href="https://apps.apple.com/us/app/quarterminder/id1214524075">App Store</a>
+                    <a href="../index.html" lang="en">English</a>
+      <a href="../es/index.html" lang="es">Español</a>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div>
-        <script src="static/templates/template4/js/main.min.js"></script></div><script src="static/templates/analytics/analytics.js"></script></body></html>
+</body>
+</html>
